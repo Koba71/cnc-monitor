@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Обзор цеха ЧПУ</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"></span>
+      <div>
+        <h1 id="page-title">Обзор цеха ЧПУ</h1>
+        <p class="subtitle">Плитки станков — по мотивам открытого Veyon Master</p>
+      </div>
+    </div>
+    <div class="topbar-meta">
+      <label class="toggle">
+        <input type="checkbox" id="hide-offline">
+        Только онлайн
+      </label>
+      <span id="clock"></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="grid" class="grid" aria-live="polite"></section>
+    <p id="empty" class="empty hidden">Нет станков для отображения.</p>
+  </main>
+
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Закрыть">×</button>
+    <img id="lightbox-img" alt="Экран станка">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

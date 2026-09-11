@@ -7,8 +7,11 @@ venv/
 .env
 .env.*
 
-# Runtime log from the CNC monitor
+# Runtime log and live shop-floor state from the CNC monitor
 machine_log.csv
+state.json
+preview.bmp
+machines.json
 
 # Editor / OS
 .idea/
